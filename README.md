@@ -11,13 +11,14 @@ Supports Docker, automatic backup retention, and optional syncing to a local Win
 
 ## Features
 
-✅ Backup n8n workflows and credentials automatically
-✅ Restore workflows and credentials from backups
-✅ Supports Docker installations of n8n
-✅ Optional local backup syncing to Windows folders
-✅ Easy push to GitHub with one click via push_git.bat
-✅ Cloudflare Tunnel integration for secure access
-Requirements
+✅ Backup n8n workflows and credentials automatically 
+✅ Restore workflows and credentials from backups 
+✅ Supports Docker installations of n8n 
+✅ Optional local backup syncing to Windows folders 
+✅ Easy push to GitHub with one click via push_git.bat 
+✅ Cloudflare Tunnel integration for secure access 
+
+## Requirements
 Linux server running n8n (Docker recommended)
 Windows or Linux machine for local backups (optional)
 Git installed for version control
@@ -27,23 +28,18 @@ Cloudflare account for tunneling (optional)
 
 1. Clone this repository:
 
-```bash
 git clone https://github.com/jonacx/n8n-backup-manager.git
+
 cd n8n-backup-manager
 
-```bash
 
 2. Make the script executable:
 
-```bash
 chmod +x n8n_manager.sh
 
-```bash
 3. Run the backup manager:
 
-```bash
 ./n8n_manager.sh
-```bash
 
 
 ## Usage
@@ -61,12 +57,10 @@ The script provides an interactive menu:
 1. Backup Workflows
 Run the backup script:
 
-```bash
 ./n8n_manager.sh
-```bash
 
 Select 1. Backup Workflows from the menu:
-```bash
+
 🚀 n8n Backup Manager
 1. Backup Workflows
 2. Restore Workflows
@@ -75,12 +69,10 @@ Select 1. Backup Workflows from the menu:
 Select an option [0-3]: 1
 📦 Backing up n8n workflows...
 ✅ Backup created: ~/.n8n/backup/n8n_backup_2025-10-16_0930.tar.gz
-```bash
 
 2. Restore Workflows
 Select 2. Restore Workflows:
 
-```bash
 Select backup file to restore: n8n_backup_2025-10-16_0930.tar.gz
 ♻️ Restoring workflows and credentials...
 ✅ Restore complete!
@@ -89,7 +81,6 @@ Select backup file to restore: n8n_backup_2025-10-16_0930.tar.gz
 3. Sync to Local Drive (Windows)
 Select 3. Sync to Local Drive:
 
-```bash
 Enter Windows backup path (e.g., D:\N8N Automation\Oracle Cloud\backup): D:\N8N Automation\Oracle Cloud\backup
 📂 Copying backup to Windows folder...
 ✅ Backup synced successfully!
@@ -98,16 +89,12 @@ Enter Windows backup path (e.g., D:\N8N Automation\Oracle Cloud\backup): D:\N8N 
 4. Push Updates to GitHub
 Run the push_git.bat script on Windows:
 
-```bash
 push_git.bat
-```bash
 
 Enter a commit message when prompted:
 
-```bash
 Enter commit message: Updated n8n backup script
 ✅ Changes pushed to GitHub successfully!
-```bash
 
 
 ## Backup Location
@@ -116,21 +103,17 @@ Enter commit message: Updated n8n backup script
 
 Folder Structure
 
-```bash
 n8n-backup-manager/
 ├── README.md               # Project description & usage instructions
 ├── LICENSE                 # MIT License
 ├── n8n_manager.sh          # Main backup & restore Bash script
 ├── push_git.bat            # One-click Git push script for Windows
 └── .gitignore              # Excludes backups, logs, temporary files
-```bash
 
 Optional backup folders (ignored by Git):
 
-```bash
 ~/.n8n/backup/             # Linux server backups
 D:\N8N Automation\Oracle Cloud\backup  # Local Windows backups
-```bash
 
 ## Notes
 1. The backup file names include timestamps for versioning.
@@ -142,4 +125,5 @@ License
 This project is licensed under the MIT License.
 
 Author
+
 Jonacx – Personal automation tools & scripts
