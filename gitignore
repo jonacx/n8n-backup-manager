@@ -1,6 +1,26 @@
 # Ignore backup archives
 n8n_backup_*.tar.gz
 
-# Ignore temporary editor files
+# Ignore Docker volumes (if any)
+*.docker
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore editor temporary files
 *~
 *.swp
+*.swx
+*.bak
+
+# Ignore log files
+*.log
+
+# Ignore Python or Node cache files (if used)
+__pycache__/
+node_modules/
+
+# Ignore any OS-specific hidden files
+ehthumbs.db
+Desktop.ini
