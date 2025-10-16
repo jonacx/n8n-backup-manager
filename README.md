@@ -28,18 +28,17 @@ Cloudflare account for tunneling (optional)
 
 1. Clone this repository:
 
-git clone https://github.com/jonacx/n8n-backup-manager.git
+  git clone https://github.com/jonacx/n8n-backup-manager.git
 
-cd n8n-backup-manager
-
+  cd n8n-backup-manager
 
 2. Make the script executable:
 
-chmod +x n8n_manager.sh
+  chmod +x n8n_manager.sh
 
 3. Run the backup manager:
 
-./n8n_manager.sh
+  ./n8n_manager.sh
 
 
 ## Usage
@@ -57,7 +56,7 @@ The script provides an interactive menu:
 1. Backup Workflows
 Run the backup script:
 
-./n8n_manager.sh
+  ./n8n_manager.sh
 
 Select 1. Backup Workflows from the menu:
 
@@ -68,6 +67,7 @@ Select 1. Backup Workflows from the menu:
 0. Exit
 Select an option [0-3]: 1
 📦 Backing up n8n workflows...
+
 ✅ Backup created: ~/.n8n/backup/n8n_backup_2025-10-16_0930.tar.gz
 
 2. Restore Workflows
@@ -76,7 +76,6 @@ Select 2. Restore Workflows:
 Select backup file to restore: n8n_backup_2025-10-16_0930.tar.gz
 ♻️ Restoring workflows and credentials...
 ✅ Restore complete!
-```bash
 
 3. Sync to Local Drive (Windows)
 Select 3. Sync to Local Drive:
@@ -84,12 +83,11 @@ Select 3. Sync to Local Drive:
 Enter Windows backup path (e.g., D:\N8N Automation\Oracle Cloud\backup): D:\N8N Automation\Oracle Cloud\backup
 📂 Copying backup to Windows folder...
 ✅ Backup synced successfully!
-```bash
 
 4. Push Updates to GitHub
 Run the push_git.bat script on Windows:
 
-push_git.bat
+  push_git.bat
 
 Enter a commit message when prompted:
 
@@ -112,7 +110,7 @@ n8n-backup-manager/
 
 Optional backup folders (ignored by Git):
 
-~/.n8n/backup/             # Linux server backups
+  ~/.n8n/backup/             # Linux server backups
 D:\N8N Automation\Oracle Cloud\backup  # Local Windows backups
 
 ## Notes
@@ -127,3 +125,4 @@ This project is licensed under the MIT License.
 Author
 
 Jonacx – Personal automation tools & scripts
+
