@@ -1,0 +1,6 @@
+# Ignore backup archives
+n8n_backup_*.tar.gz
+
+# Ignore temporary editor files
+*~
+*.swp
